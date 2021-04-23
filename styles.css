@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;800&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(91, 91, 247);
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+
+
+#name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.coinCard{
+    height: fit-content;
+    width: 50%;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#nav{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#add{
+    background-color: white;
+    height: 70%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(91, 91, 247);
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+#add:hover{
+    transform : scale(1.1);
+}
+
+
+#addPrompt{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#addPromptInner{
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.listItem{
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(167, 167, 247);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    transition: all 0.3s;
+}
+
+.listItem:hover{
+    transform: scale(1.05);
+    background-color: rgb(91, 91, 247);
+    cursor: pointer;
+}
+
+
+#inputBox{
+    background-color: rgb(216, 216, 255);
+    height: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin: 20px;
+}
+
+#addCoin{
+    margin:20px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(91, 91, 247);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+    
+
+}
+
+
+#addCoin:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#back{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 1.5rem;
+    user-select: none;
+    font-weight: 800;
+    transition: all 0.3s;
+}
+
+
+
+#back:hover{
+    transform: scale(1.5);
+    color: rgb(91, 91, 247);
+    cursor: pointer;
+}
+
+
+.del{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+}
+
+
+svg{
+    fill:rgb(165, 165, 255);
+    transition: all 0.2s;
+}
+
+
+svg:hover{
+    fill:rgb(91, 91, 247);
+    transform: scale(1.1);
+    cursor: pointer;
+}
